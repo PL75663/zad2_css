@@ -1,0 +1,50 @@
+/* Изменение шрифта для всей страницы и установка фона */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4fdf4; /* Очень светлый зеленый фон */
+    color: #333333;
+    margin: 0;
+    padding: 20px; /* Отступы для body (требование) */
+}
+
+/* Контейнер резюме для красивого визуального оформления */
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование */
+    background-color: #ffffff;
+    padding: 40px; /* Внутренние отступы (требование) */
+    border-top: 8px solid #2e8b57; /* Зеленый акцент (требование) */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+}
+
+/* Заголовки: используем зеленый цвет (требование) */
+h1 {
+    color: #2e8b57;
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #2e8b57;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Стилизация списков */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Стилизация шапки */
+header p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-top: 0;
+}
