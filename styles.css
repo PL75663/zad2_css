@@ -1,6 +1,6 @@
 body {
     font-family: 'Verdana', sans-serif;
-    background-color: #f0fdf4;
+    background-color: #f3f0f7; /* Очень светлый фиолетовый фон страницы */
     color: #1f2937;
     margin: 0;
     padding: 30px;
@@ -11,10 +11,22 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 50px;
-    border-top: 10px solid #059669;
-    border-bottom: 4px solid #059669;
+    border-top: 10px solid #6d28d9; /* Толстая фиолетовая линия сверху */
+    border-bottom: 4px solid #6d28d9; /* Средняя фиолетовая линия снизу */
     border-radius: 4px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(109, 40, 217, 0.05); /* Мягкая фиолетовая тень */
+    position: relative; /* Для декоративной золотой линии сбоку */
+}
+
+/* Тонкая декоративная золотая линия вдоль левого края всего контейнера */
+.cv-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #f59e0b;
 }
 
 header {
@@ -23,7 +35,7 @@ header {
 }
 
 h1 {
-    color: #059669;
+    color: #4c1d95; /* Глубокий фиолетовый для имени */
     font-size: 2.8em;
     margin-bottom: 10px;
     letter-spacing: -1px;
@@ -31,18 +43,19 @@ h1 {
 
 .position {
     font-size: 1.2em;
-    color: #4b5563;
+    color: #7c3aed; /* Более светлый фиолетовый для подзаголовка */
     font-weight: bold;
 }
 
 h2 {
-    color: #065f46;
+    color: #5b21b6; /* Фиолетовый для заголовков секций */
     font-size: 1.5em;
-    border-left: 5px solid #059669;
+    border-left: 5px solid #6d28d9; /* Фиолетовый маркер слева */
     padding-left: 15px;
     margin-top: 35px;
     margin-bottom: 15px;
     background-color: #f9fafb;
+    border-bottom: 1px solid #f59e0b; /* Сплошная золотая линия под заголовком */
 }
 
 .skills {
@@ -57,17 +70,18 @@ ul {
 }
 
 li {
-    background: #ecfdf5;
+    background: #ede9fe; /* Очень светлый фиолетовый фон для пунктов списка */
     margin-bottom: 5px;
     padding: 8px 15px;
     border-radius: 3px;
-    color: #047857;
+    color: #5b21b6; /* Фиолетовый текст в пунктах навыков */
+    border-bottom: 1px solid #f3e8ff; /* Едва заметная линия между пунктами */
 }
 
 .project {
     margin-bottom: 15px;
     padding: 10px;
-    border-left: 2px solid #d1fae5;
+    border-left: 2px dotted #a78bfa; /* Пунктирная фиолетовая линия-разделитель для проектов */
 }
 
 section p {
